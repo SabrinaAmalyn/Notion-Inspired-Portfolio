@@ -2,6 +2,8 @@
 
 This is my personal portfolio website, designed and developed using HTML & CSS, inspired by Notion’s sleek and organized aesthetic. I built this space to showcase my journey in software development, my projects, and the skills I’ve gained along the way. The minimalist black-and-white design is intentional— as I want my projects to take center stage and speak for themselves.
 
+Before diving into development, I also experimented with Figma to create a mockup of this website, which helped act as a style guide throughout the design process.
+
 🚧 Work in Progress! 🚧
 
 Some image assets are still pending, as I plan to collaborate with my artist friend for custom illustrations. Additionally, the Projects section currently features draft layouts and temporary images sourced from the internet, as I haven’t uploaded all my past work yet. 
