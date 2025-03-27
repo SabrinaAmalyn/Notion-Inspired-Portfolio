@@ -21,7 +21,7 @@ There are still a few areas I’m actively working on to enhance the site:
 
 # Below are the screenshots of each section:
 
-![image](https://github.com/user-attachments/assets/d1f13de1-8b3c-423e-be52-1f8d658daa56)
+![image](https://github.com/user-attachments/assets/95d6c171-b672-4cf1-9257-2682d1199bbc)
 ![image](https://github.com/user-attachments/assets/3c86f7fc-490b-4572-ba04-89ed87971ef1)
 ![image](https://github.com/user-attachments/assets/28d8d7eb-8143-40cc-a56d-24c9e1bc504c)
 ![image](https://github.com/user-attachments/assets/4cde95a2-7609-49ea-a3b6-f9938ee3fb6b)
