@@ -1,270 +1,283 @@
 <!DOCTYPE html>
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sabrina's Portfolio 2025</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
+        <title>2025 Portfolio</title>
+
+        <!-- Stylesheet -->
+        <link rel="stylesheet" href="style.css">
+            <!-- Bootstrap Icons -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
     </head>
 
     <header>
-        <nav class="nav-bar">
-            <img src="" alt="Portfolio Logo">
-            <ul class="nav-links">
+        <nav>
+            <a href=""><img src="" class="logo" alt="Logo"></a>
+            <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
+                <li><a href="#about-me">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#background">Background</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <!-- <li><a href="">Contact Me</a></li> -->
             </ul>
+            <a href="your-resume.pdf" class="button" download>
+                <i class="bi bi-download"></i>  Resume
+            </a>
         </nav>
     </header>
 
     <body>
-
-        <section id="home" class="home-section">
-
-            <div class="home-text">
-                <h3>👋 Hi! My name is Sabrina Rizal and I am a...</h3>
-                <h1>Software Engineering Graduate</h1>
-                <p class="home-subtitle">
-                    Welcome to my portfolio, crafted with HTML & CSS and inspired 
-                    by Notion’s clean and organized design.
-                    I’ve created this space to share more about myself, 
-                    my journey in software development, and the projects I’ve built.
-                </p>
-                <br>
-                <p class="home-subtitle"> Feel free to reach out to me!</p>
-                <br>
-                <a href="mailto:sabrina.rizal16@gmail.com" class="button"><i class="bi bi-envelope-fill"></i></a>
-                <a href="https://www.linkedin.com/in/sabrina-rizal-7355b8265/" class="button"><i class="bi bi-linkedin"></i></a>
-                <a href="https://github.com/SabrinaAmalyn" class="button"><i class="bi bi-github"></i></a>
-
-            </div>
-            
-            <div class="home-img">
-                <img src="images/home-img.jpg" alt="Girl coding on laptop">
-            </div>
-
-        </section>
-
-        <div class="section-header">About Me</div> 
-        <section id="about" class="about-section">
-            <div class="about-container">
-
-                <h4>Executive Summary</h4>
-
-                <div class="about-text">
-                    <ul class="icon-list">
-                        <li><i class="bi bi-mortarboard-fill"></i> Software Engineering graduate currently based in Shah Alam, Selangor.</li>
-                        <li><i class="bi bi-code-slash"></i> Enjoys building solutions, from full-stack applications to AI-powered projects.</li>
-                        <li><i class="bi bi-cpu-fill"></i> Currently exploring machine learning, cloud computing, Azure AI, and data analytics.</li>
-                        <li><i class="bi bi-people-fill"></i> Actively involved in tech communities and mentorship programs to learn, share, and grow.</li>
-                    </ul>
+        <section class="home" id="home">
+        
+            <div class="left-column">
+                <div class="column-text">
+                    <h1><span class="regular">Hello, I'm</span> Sabrina Rizal.</h1>
+                    <h1>A Software <span class="outlined">Engineer</span></h1>
+                    <h1><span class="regular">Based in</span> Malaysia.</h1>
                 </div>
-
-                <br>
-
-                <!-- <div class="home-technical-skills">
-                    <h4>Technical Skills</h4>
-
-                </div> -->
-
-            </div>
-
-            <div class="about-container-middle">
-
-                <h4>Work Experience</h4>
-                <hr>
-                <br>
-
-                <div class="desc-container">
-                    <p>
-                        <b>Aug 2024 - Oct 2024</b>
-                        <br>
-                        Pomen Autodata SDN BHD
-                        <br>
-                        Software Engineer Intern
-                        <br>
-                        <ul>
-                            <li>Contributed to the Engarage project, a Laravel-based car workshop management platform.</li> 
-                            <li>Developed an admin panel to track customer interactions and enhance user experience.</li> 
-                            <li>Followed Agile methodology, participating in daily Scrum meetings.</li>
-                            <li>Assisted in debugging and optimizing performance.</li>
-                        </ul>
-                    </p>
-
+                <div class="home-buttons">
+                    <a href="mailto:sabrina.rizal16@gmail.com" class="btn-icon"><i class="bi bi-envelope-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/sabrina-rizal-7355b8265/" target="_blank" class="btn-icon"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/SabrinaAmalyn" target="_blank" class="btn-icon"><i class="bi bi-github"></i></a>
                 </div>
-
-                <br>
-
-                <h4>Education</h4>
-                <hr>
-                <br>
-
-                <div class="desc-container">
-
-                    <b>Dec 2021 - March 2025</b>
-                    <br>
-                    <p>
-                        Multimedia University
-                        <br>
-                        Bachelor of Computer Science (Specializing in Software Engineering)
-                    </p>
-                </div>
-
-                <br>
-
-                <div class="desc-container">
-                    
-                    <b>Nov 2020 - Dec 2021</b>
-                    <br>
-                    <p>
-                        Multimedia University
-                        <br>
-                        Foundation in Information Technology
-                        <br>
-                    </p>
-                </div>
-
-                <br>
-                <h4>Extracurricular</h4>
-                <hr>
-                <br>
-
-                <div class="desc-container">
-                    <p>
-                        <b>February 2023 - March 2025</b>
-                        <br>
-                        TechGirls MMU | Head of Logistics
-                        <ul>
-                            <li>Managed venue booking, equipment setup, transportation, and procurement for various events.</li>
-                            <li>Most Notable: Served as Vice Director of Femme Fest, MMU’s first female festival, supporting 20+ vendors and  200+ students.</li>
-                        </ul>
-                    </p>
-                </div>
-
-                <br>
-
-                <div class="desc-container">
-                    <p>
-                        <b>January 2023 - December 2024</b>
-                        <br>
-                        IEEE MMU SB | Assistant Head of Logistics
-                        <br>
-                        <ul>
-                            <li>Managed event logistics for IEEE MMU, a student branch of IEEE.</li>
-                            <li>Most Notable: Assisted in organizing the Youth Innovators Challenge (YIC) at MMU, ensuring smooth operations  for 70 teams, 210 students, and 29 schools developing real-world solutions with open-source microcontrollers.</li>
-                        </ul>
-                    </p>
-                </div>
-
-            </div>
-
-            <div class="about-container">
-
-                <h4>Certifications & Achievements</h4>
-                <hr>
-                <br>
-
-                <div class="desc-container">
-                    <b>Meta Front-End Developer Professional Certificate</b>
-                    <p>March 2024 - April 2024</p>
-                </div>
-
-                <br>
-
-                <div class="desc-container">
-                    <b>Malaysian University English Test (MUET)</b>
-                    <p>Sep 2022 - Sep 2027 | Band 4.0</p>
-                </div>
-
-                <br>
-
-                <h4>Mentorship Experience</h4>
-                <hr>
-                <br>
-
-                <div class="desc-container">
-                    <b>DELL StemAspire Mentorship Program</b>
-                    <br>
-                    <p>August 2024 – January 2025</p>
-                    <ul>
-                        <li>Mentored by industry professionals on AI, software development, and career growth.</li>
-                        <li>Participated in technical workshops, networking events, and career-building sessions.</li>
-                    </ul>
-                    </ul>
-                </div>
-
-                <br>
-
-                <div class="desc-container">
-                    <b>Microsoft Code Without Barriers Mentorship Program</b>
-                    <br>
-                    <p>March 2024 - April 2024</p>
-                    <ul>
-                        <li>Mentored alongside other mentees in a program focused on AI and cloud computing.</li>
-                        <li>Taking the Microsoft Azure AI Fundamentals course to develop expertise in cloud-based AI solutions.</li>
-                        <li>Engaging in technical workshops, networking sessions, and hands-on projects to strengthen AI and cloud computing skills.</li>
-                    </ul>
-                    </ul>
-                </div>
-
                 
-
             </div>
-
+    
+            <div class="right-column">
+                <img src="images/home-img.jpg" alt="Sabrina Rizal">
+            </div>
+    
         </section>
 
-        <div class="section-header">My Projects</div> 
-        <section id="projects" class="projects-section">
-            <div class="projects-container">
-                <div class="project-box">
-                    <img src="images/project1.png" alt="Project 1">
-                    <h3>Project 1</h3>
-                    <p>Short description of the project.</p>
-                </div>
-                <div class="project-box">
-                    <img src="images/project2.jpg" alt="Project 2">
-                    <h3>Project 2</h3>
-                    <p>Short description of the project.</p>
-                </div>
-                <div class="project-box">
-                    <img src="images/project3.jpg" alt="Project 3">
-                    <h3>Project 3</h3>
-                    <p>Short description of the project.</p>
-                </div>
-                <div class="project-box">
-                    <img src="images/project4.png" alt="Project 4">
-                    <h3>Project 4</h3>
-                    <p>Short description of the project.</p>
-                </div>
-                <div class="project-box">
-                    <img src="images/project5.png" alt="Project 5">
-                    <h3>Project 5</h3>
-                    <p>Short description of the project.</p>
-                </div>
-                <div class="project-box">
-                    <img src="images/project6.jpg" alt="Project 6">
-                    <h3>Project 6</h3>
-                    <p>Short description of the project.</p>
+        <section class="about-me" id="about-me">
+            <div class="left-column">
+                <img src="images/home-img.jpg" alt="Sabrina Rizal">
+            </div>
+    
+            <div class="right-column">
+                <div class="column-text">
+                    <h1><span class="regular">About</span> Me.</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non gravida ligula. Sed pharetra vehicula ipsum, eu tincidunt velit tincidunt a. Quisque in quam nulla. Proin id quam luctus, consectetur sem in, feugiat massa. Aliquam eget cursus orci. Cras iaculis enim arcu, ut ullamcorper quam mollis nec. Vestibulum lacinia, risus bibendum euismod sodales, elit mi tempus lectus, vel fermentum nibh urna non nisl. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed volutpat dictum urna eu elementum. Proin consequat dui vel placerat ullamcorper. Quisque quam enim, fringilla vel tempor et, venenatis non mauris. Donec non est at turpis euismod porta. Suspendisse lacinia egestas semper. Duis eleifend at orci quis blandit.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non gravida ligula. Sed pharetra vehicula ipsum, eu tincidunt velit tincidunt a. Quisque in quam nulla. Proin id quam luctus, consectetur sem in, feugiat massa. Aliquam eget cursus orci. Cras iaculis enim arcu, ut ullamcorper quam mollis nec. Vestibulum lacinia, risus bibendum euismod sodales, elit mi tempus lectus, vel fermentum nibh urna non nisl.
+                    </p>
                 </div>
             </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h1><span class="regular">My </span>Skills</h1>
+        
+            <div class="skills-container">
+                <div class="skill-contents">
+                    <img src="images/javascript.png" alt="JavaScript Logo">
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/python.png" alt="Python Logo">
+                    <p>Python</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/java.png" alt="Java Logo">
+                    <p>Java</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/c++.png" alt="C++ Logo">
+                    <p>C++</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/php.png" alt="PHP Logo">
+                    <p>PHP</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/html.png" alt="HTML Logo">
+                    <p>HTML</p>
+                </div>
+            </div>
+        
+            <div class="skills-container">
+                <div class="skill-contents">
+                    <img src="images/css.png" alt="CSS Logo">
+                    <p>CSS</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/bootstrap.png" alt="Bootstrap Logo">
+                    <p>Bootstrap</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/react.png" alt="React Logo">
+                    <p>React</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/nodejs.png" alt="Node.js Logo">
+                    <p>Node.js</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/express.png" alt="Express.js Logo">
+                    <p>Express.js</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/postgresql.png" alt="PostgreSQL Logo">
+                    <p>PostgreSQL</p>
+                </div>
+            </div>
+        
+            <div class="skills-container">
+                <div class="skill-contents">
+                    <img src="images/nosql.png" alt="NoSQL Logo">
+                    <p>NoSQL</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/mysql.svg" alt="MySQL Logo">
+                    <p>MySQL</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/github.svg" alt="GitHub Logo">
+                    <p>GitHub</p>
+                </div>
+                <div class="skill-contents">
+                    <img src="images/bitbucket.svg" alt="Bitbucket Logo">
+                    <p>Bitbucket</p>
+                </div>
+            </div>
+        
         </section>
         
+
+        <section class="background" id="background">
+            <div class="left-column">
+                <div class="education">
+                    <h1><span class="regular">My </span>Education.</h1>
+            
+                    <div class="bg-container">
+                        <div class="bg-header">
+                            <img src="images/mmu.png" alt="MMU Logo" class="bg-logo">
+                            <h3>Bachelor of Computer Science (Hons.) Software Engineering at MMU</h3>
+                            <span class="bg-date">Dec 2021 - Mar 2025</span>
+                        </div>
+                        <p class="bg-description">
+                            My Software Engineering degree covered programming, algorithms, and computer systems, with a focus on Software Engineering principles 
+                            like Requirements Engineering, Design, and Quality Assurance. I applied my knowledge through industrial training and a Final Year Project.
+                        </p>
+                        <p class="bg-description">
+                            For my extracurriculars, I was an active TechGirls Club member, starting in Logistics before becoming Head of Logistics 
+                            and later joining the Executive Committee. My key achievement was serving as Vice Director of Femme Fest, MMU’s first female-focused 
+                            festival, supporting 20+ vendors and 200+ students. I also served as Assistant Head of Logistics for IEEE Student Branch, helping 
+                            organize the Youth Innovators Challenge (YIC) for 70 teams, 210 students, and 29 schools. 
+                            Additionally, I participated in IT Society workshops and hackathons and enjoyed volunteering with OARS.
+                        </p>
+                    </div>
+            
+                    <div class="bg-container">
+                        <div class="bg-header">
+                            <img src="images/mmu.png" alt="MMU Logo" class="bg-logo">
+                            <h3>Foundation in Information Technology at MMU</h3>
+                            <span class="bg-date">Nov 2020 - Dec 2021</span>
+                        </div>
+                        <p class="bg-description">
+                            Completed a Foundation in IT, covering computing, mathematics, business, and digital systems. 
+                            Gained problem-solving, programming, and critical thinking skills, culminating in a Mini IT Project.
+                        </p>
+                    </div>
+            
+                    <div class="bg-container">
+                        <div class="bg-header">
+                            <img src="images/imas.png" alt="IMAS Logo" class="bg-logo">
+                            <h3>Secondary Education at IMAS</h3>
+                            <span class="bg-date">Aug 2018 - Aug 2020</span>
+                        </div>
+                        <p class="bg-description">Completed O-levels with a focus on science and mathematics.</p>
+                    </div>
+            
+                    <div class="bg-container">
+                        <div class="bg-header">
+                            <img src="images/ais.png" alt="AIS Logo" class="bg-logo">
+                            <h3>Primary Education at Al-Rowad International School</h3>
+                            <span class="bg-date">Sep 2009 - Oct 2017</span>
+                        </div>
+                        <p class="bg-description">Developed a strong foundation in math, science, English, and basic Arabic and French.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="work">
+                    <h1><span class="regular">My </span>Work Experience.</h1>
+            
+                    <div class="bg-container">
+                        <div class="bg-header">
+                            <img src="images/pomen.png" alt="Logo" class="bg-logo">
+                            <h3>Software Engineering Intern at Pomen</h3>
+                            <span class="bg-date">Aug 2024 - Oct 2024</span>
+                        </div>
+                        <p class="bg-description">
+                            I contributed to the Engarage project, a Laravel-based car workshop platform, by developing an admin panel to track customer interactions and enhance UX. 
+                            Following Agile methodology, I joined daily SCRUM meetings, helped debug and optimize performance, and collaborated using Bitbucket.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section class="projects" id="projects">
+            <h1><span class="regular">My </span>Projects</h1>
+        
+            <div class="project-container">
+                <div class="left-column">
+                    <img src="images/project1.png" alt="Project 1">
+                </div>
+                <div class="right-column">
+                    <div class="number-label">O1</div>
+                    <h2>Project 1</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non gravida ligula. 
+                        Sed pharetra vehicula ipsum, eu tincidunt velit tincidunt a.
+                    </p>
+                    <a href="#" class="button">View Project</a>
+                </div>
+            </div>
+        
+            <div class="project-container">
+                <div class="left-column">
+                    <div class="number-label">O2</div>
+                    <h2>Project 2</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non gravida ligula. 
+                        Sed pharetra vehicula ipsum, eu tincidunt velit tincidunt a.
+                    </p>
+                    <a href="#" class="button">View Project</a>
+                </div>
+                <div class="right-column">
+                    <img src="images/project2.jpg" alt="Project 2">
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="left-column">
+                    <img src="images/project3.jpg" alt="Project 1">
+                </div>
+                <div class="right-column">
+                    <div class="number-label">O3</div>
+                    <h2>Project 3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi non gravida ligula. 
+                        Sed pharetra vehicula ipsum, eu tincidunt velit tincidunt a.
+                    </p>
+                    <a href="#" class="button">View Project</a>
+                </div>
+            </div>
+
+        </section>
         
 
     </body>
 
-    <footer class="footer">
-        <p>© 2025 Sabrina Rizal. All rights reserved.</p>
-        <p>
-            <a href="#home">Home</a> |
-            <a href="#about">About</a> |
-            <a href="#projects">Projects</a> 
-            <!-- <a href="#contact">Contact</a> -->
-        </p>
+    <footer>
+        <p>&copy; 2025 Sabrina Rizal. All rights reserved.</p>
     </footer>
 
 </html>
