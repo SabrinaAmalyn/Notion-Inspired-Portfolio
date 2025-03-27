@@ -8,8 +8,6 @@ Before diving into development, I also experimented with Figma to create a mocku
 
 Some image assets are still pending, as I plan to collaborate with my artist friend for custom illustrations. Additionally, the Projects section currently features draft layouts and temporary images sourced from the internet, as I haven’t uploaded all my past work yet. 
 
-![image](https://github.com/user-attachments/assets/fd5d8fb7-a797-409e-80b4-3a10ec66a50b)
-
 
 ### Upcoming Improvements !!
 There are still a few areas I’m actively working on to enhance the site:
@@ -19,8 +17,6 @@ There are still a few areas I’m actively working on to enhance the site:
 - Inserting Actual Projects – Replacing placeholder images with my real work.
 
 - Interactive Project Pages – Selecting a project in the gallery will direct visitors to a dedicated page documenting its development process, similar to a Notion page.
-
-- Technical Skills Section – Highlighting my expertise in programming languages, frameworks, and tools.
   
 
 # Below are the screenshots of each section:
