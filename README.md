@@ -21,10 +21,12 @@ There are still a few areas I’m actively working on to enhance the site:
 
 # Below are the screenshots of each section:
 
-![image](https://github.com/user-attachments/assets/cd62da10-cdd8-40b6-b344-9400537db711)
-![image](https://github.com/user-attachments/assets/b778ae18-1e51-4ff1-97bc-1a634892984d)
-![image](https://github.com/user-attachments/assets/9e6908a4-8e1e-43f3-82e2-b31fd0feb944)
-![image](https://github.com/user-attachments/assets/4f979cc5-1208-4a96-a853-6dc8194fde55)
+![image](https://github.com/user-attachments/assets/6b5b2e88-8885-4e21-b3fe-10f84fe29893)
+![image](https://github.com/user-attachments/assets/01de023f-0095-45eb-85d5-90b8070fe3b0)
+![image](https://github.com/user-attachments/assets/f1b44340-df45-4d21-b588-deb56e9afcad)
+![image](https://github.com/user-attachments/assets/45f871ed-31be-4b91-bdf6-8ff8fdc799a7)
+![image](https://github.com/user-attachments/assets/276170a9-2c7d-4115-bf27-ea31b632c0ee)
+
 
 
 # 📌 How to Open the Project
