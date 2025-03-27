@@ -26,6 +26,8 @@ There are still a few areas I’m actively working on to enhance the site:
 ![image](https://github.com/user-attachments/assets/28d8d7eb-8143-40cc-a56d-24c9e1bc504c)
 ![image](https://github.com/user-attachments/assets/4cde95a2-7609-49ea-a3b6-f9938ee3fb6b)
 ![image](https://github.com/user-attachments/assets/7cd7d7c1-53a1-4012-9cd4-91f6b7939416)
+![image](https://github.com/user-attachments/assets/9a08d667-f39c-4c54-8bf6-4ce18c114981)
+![image](https://github.com/user-attachments/assets/709ef439-3b92-473d-9fe0-fbfbd95c6056)
 
 
 # 📌 How to Open the Project
