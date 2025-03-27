@@ -1,330 +1,430 @@
-
-/* Typography */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
-    font-family: 'Inter', sans-serif, Arial, Helvetica;
-    margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth; /* Smooth scrolling for navigation */
-}
-
-h1 { 
-    font-size: 2rem; /* 32px */
-}    
-
-h2 { 
-    font-size: 1.75rem; /* 28px */
-}
-
-h3 { 
-    font-size: 1.5rem; /* 24px */
-}
-
-h4 {
-    font-size: 1rem; /* 16px */
-}
-
-h1, h2, h3, h4 {
-    font-weight: 600;
-    margin-bottom: 12px;
-}
-
-p { 
-    font-weight: 400;
-    line-height: 1.6;
-    color: #191919;
-}
-
-/* General Button Styling */
-.button {
-    display: inline-flex; /* Flex for centering */
-    justify-content: center;
-    align-items: center;
-    padding: 8px 16px;
+    margin: 0;
     text-decoration: none;
-    text-align: center;
-    color: #fff;
-    background-color: #000; /* Notion-style black button */
-    border: 2px solid #000;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: all 0.3s ease-in-out;
-    margin-right: 8px;
+    list-style: none;
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: 'Inter', "Segoe UI", sans-serif;
+}
+/* ---------------------------------------------------------------------------- */
+/* Font Styling */
+/* ---------------------------------------------------------------------------- */
+h1 { 
+    font-size: 3rem; 
+    font-weight: 700; 
 }
 
-/* Hover Effect */
-.button:hover {
-    background-color: transparent;
-    color: #000;
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
 }
 
-/* Optional: Ghost-style button */
-.button.outline {
-    background-color: transparent;
-    color: #000;
+h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
-.button.outline:hover {
-    background-color: #000;
-    color: #fff;
+.outlined {
+    color: transparent; /* Makes the text transparent */
+    -webkit-text-stroke: 3px black; /* Outline thickness and color */
+    white-space: nowrap;
 }
 
-/* Increase Icon Size Inside Button */
-.button i {
-    font-size: 28px; /* Adjust icon size */
+.regular {
+    font-weight: 400;
 }
 
+p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: black;
+}
 
-/* Navigation Bar Styling */
-.nav-bar {
-    display: flex;  
-    justify-content: space-between; /* Puts logo on the left, links on the right */
-    align-items: center; /* Centers items vertically */
-    padding: 16px 40px; /* Adds spacing inside navbar */
-    position: fixed; /* Sticks navbar to top when scrolling */
+/* ---------------------------------------------------------------------------- */
+/* Header Styling */
+/* ---------------------------------------------------------------------------- */
+header {
+    position: sticky;
     top: 0;
     width: 100%;
-    z-index: 1000; /* Ensures navbar stays on top of other elements */
-    border-bottom: 1px solid #E0E0E0; /* Adds a subtle bottom border */
-    background-color: #FFFFFF; /* White background */
+    background-color: white;
+    z-index: 1000;
 }
 
-/* Logo Styling */
-.nav-bar img {
-    height: 40px; /* Adjusts logo size */
+/* Navbar Styling */
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 600;
+    height: 56px;
+    margin: 24px 80px;
+    padding: 0 32px;
+    background-color: white; /* Ensures it stays visible */
 }
 
-/* Navigation Links */
-.nav-links {
-    list-style: none; /*Removes bullet points*/
-    display: flex; /* Aligns links horizontally */
-    gap: 24px; /* Adds space between links */
+nav .logo {
+    height: 40px;
 }
 
-.nav-links a {
-    text-decoration: none; /* Removes underline */
-    font-size: 1rem; /* 16px */
-    color: #191919; /* Black text color */
-    font-weight: 500;
-    padding: 8px 0; /* Adds space inside link */
-    position: relative; /* Allows for absolute positioning of pseudo-element */
+/* Navigation Menu */
+nav ul {
+    display: flex;
+    gap: 32px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
 }
 
 /* Underline Hover Effect */
-.nav-links a::after {
-    content: ""; /* Adds a pseudo-element */
-    display: block; /* Makes the pseudo-element a block element */
-    height: 2px; /* Sets the height of the pseudo-element */
-    width: 0;
-    background: #191919;
-    transition: width 0.3s ease-in-out; /* Adds a smooth animation */
-    position: absolute; /* Positions the pseudo-element absolutely */
-    bottom: -2px;
+nav ul li a {
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    position: absolute;
     left: 0;
+    bottom: -10px;
+    width: 0%;
+    height: 3px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
 }
 
-.nav-links a:hover::after {
-    width: 100%; /* Makes the pseudo-element full width on hover */
-}
-
-/* Section Styling */
-section {
-    min-height: 100vh; /* 100% of the viewport height */
-    padding: 0px 20px; /* Adds spacing inside the section */
-}
-
-/* Full-width Section Header */
-.section-header {
-    font-size:  16px;
-    font-weight: bold;
-    background: #e0e0e0; /* Light grey background */
-    color: #666; /* Darker grey text */
-    padding: 12px 10px; /* Full row padding */
-    text-align: left;
-    margin: 25px;
-}
-
-
-.home-section {
-    display: flex;
-    align-items: center;
-    justify-content: center; /* Center content */
-    min-height: 100vh;
-    padding: 40px 80px;
-    /* background: #F5F5F5; */
-}
-
-/* Text Section */
-.home-text {
-    flex: 1;
-    max-width: 50%; /* Ensures text doesn't take too much space */
-    margin-left: 100px;
-}
-
-.home-subtitle {
-    font-size: 1.25rem; /* 20px */
-}
-
-/* Image Section */
-.home-image {
-    flex: 1;
-    display: flex;
-    justify-content: center; /* Centers image */
-    align-items: center;
-}
-
-.about-section {
-    /* background: #CCCCCC;  */
-    display: flex;
-    justify-content: space-between; /* Distributes space evenly */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Space between containers */
-}
-
-.about-container {
-    flex: 1; /* Makes all three containers equal in width */
-    background: #fff;
-    display: flex; /* Allows content to be centered */
-    flex-direction: column;
-    min-height: 125vh;
-    padding: 0px 10px;
-    margin: 0;
-}
-
-.about-container-middle {
-    flex: 1.5; /* Makes all three containers equal in width */
-    background: #fff;
-    display: flex; /* Allows content to be centered */
-    flex-direction: column;
-    min-height: 125vh;
-    padding: 0px 10px;
-    margin: 0;
-}
-
-.about-text {
-    border: 1px solid #E0E0E0; /* Light border */
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.about-text:hover {
-    transform: translateY(-5px);
-}
-
-
-/* Remove default bullets */
-.icon-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-/* Style list items */
-.icon-list li {
-    display: flex;
-    gap: 10px; /* Space between icon and text */
-    margin-bottom: 10px; /* Space between items */
-    font-size: 16px;
-}
-
-.home-technical-skills {
-    border: 1px solid #E0E0E0; /* Light border */
-    padding: 20px;
-    background-color: #E0E0E0;
-}
-
-.desc-container {
-    border-left: #000 3px solid;
-    padding: 10px;
-    font-size: 0.875rem; 
-}
-
-.desc-container ul, .desc-container li {
-    padding-left: 20px;
-    padding-top: 5px;
-}
-
-.desc-container:hover {
-    transform: scale(1.05);
-}
-
-.projects-section {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 110vh; /* Full-page height */
-    /* background: #f5f5f5; */
-    padding: 0px 40px;
-}
-
-.projects-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
-    gap: 20px; /* Spacing between grid items */
-    width: 100%; /* Adjust width as needed */
-}
-
-.project-box {
-    background: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border: #E0E0E0 1px solid;
-    border-radius: 3px;
-    font-size: 18px;
-    font-weight: bold;
-    transition: transform 0.3s ease-in-out;
-}
-
-.project-box img {
-    width: 100%; /* Make image take full width */
-    height: 250px; /* Set fixed height */
-    object-fit: cover; /* Ensure image scales well */
-}
-
-.project-box h3 {
-    border-top: #E0E0E0 1px solid;
-    font-size: 20px;
-    color: #333;
-    padding: 10px;
-}
-
-.project-box p {
-    font-size: 14px;
-    padding: 10px;
-    color: #666;
-}
-
-/* Hover effect like Notion */
-.project-box:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15);
-}
-
-
-
-/* Footer Styling */
-.footer {
+nav ul li a:hover::after {
     width: 100%;
-    padding: 20px 40px;
-    background: white;
-    border-top: 1px solid #E0E0E0; /* Subtle top border */
-    text-align: center;
-    font-size: 0.9rem;
-    color: #666;
 }
 
-/* Footer Links */
-.footer a {
-    color: #191919;
+/* Resume Button */
+nav .button {
+    display: flex; /* Aligns icon and text horizontally */
+    align-items: center; /* Centers content vertically */
+    gap: 8px; /* Space between icon and text */
+    padding: 10px 16px; /* Adjust padding for a better look */
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px; /* Ensures text is readable */
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Hover Effect */
+nav .button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Icon inside the Button */
+nav .button i {
+    font-size: 20px; /* Adjusts the icon size */
+    font-weight: 800; /* Ensures the icon is bold */
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Section Styling */
+/* ---------------------------------------------------------------------------- */
+section {
+    padding: 60px 112px;
+    display: flex;
+    justify-content: center; /* Centers content horizontally */
+    gap: auto; /* Spreads out the image and text */
+    min-height: 100vh; /* Ensures each section takes up the full viewport height */
+}
+
+/* Check for background color and adjust text accordingly */
+section:nth-child(odd) {
+    background-color: black;
+    color: white;
+}
+
+section:nth-child(even) {
+    background-color: white;
+    color: black;
+}
+
+/* Ensuring headings follow the alternation */
+section:nth-child(odd) h1, 
+section:nth-child(odd) h2, 
+section:nth-child(odd) h3, 
+section:nth-child(odd) p {
+    color: white;
+}
+
+section:nth-child(even) h1, 
+section:nth-child(even) h2, 
+section:nth-child(even) h3,
+section:nth-child(even) p {
+    color: black;
+}
+
+.left-column, .right-column {
+    flex: 1; /* Equal width */
+    padding: 20px 32px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Home Section Styling */
+/* ---------------------------------------------------------------------------- */
+.home {
+    display: flex;
+    align-items: center; /* Ensures vertical centering */
+}
+
+.column-text {
+    display: flex;
+    flex-direction: column; /* Stacks h1 elements */
+    gap: 20px; /* Adds 20px space between them */
+    margin-bottom: 40px;
+}
+
+.home img {
+    width: 100%; /* Makes image responsive */
+    max-width: 550px; /* Prevents it from being too large */
+}
+
+.home-buttons {
+    display: flex;
+    gap: 16px; /* Space between buttons */
+}
+
+.btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    border-radius: 4px;
+    border: black solid 3px;
+    background-color: black; 
+    color: white;
+    font-size: 20px; /* Icon size */
     text-decoration: none;
-    font-weight: 500;
-    margin: 0 10px;
+    transition: background 0.3s;
 }
 
-.footer a:hover {
-    text-decoration: underline;
+/* Hover effect */
+.btn-icon:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* About Me Section Styling */
+/* ---------------------------------------------------------------------------- */
+
+.about-me img{
+    border-radius: 12px;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Background Section Styling */
+/* ---------------------------------------------------------------------------- */
+
+.background h1{
+    text-align: center;
+    padding: 20px 0px;
+}
+
+
+.bg-container {
+    margin: 40px 0px;
+    border: #71717A 1px solid; 
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 20px; /* Optional: Adds spacing between rows */
+    background-color: transparent;
+}
+
+/* Keeps the logo, title, and date in one line */
+.bg-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.bg-header h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Logo */
+.bg-logo {
+    width: 40px;
+    height: auto;
+}
+
+/* Date */
+.bg-date {
+    font-size: 16px;
+    margin-left: auto;
+    color: #D4D4D8;
+}
+
+/* Description paragraph - HIDDEN by default */
+.bg-description {
+    color: #D4D4D8;
+    font-size: 14px;
+    margin-top: 8px;
+    max-height: 0; /* Initially collapsed */
+    opacity: 0; /* Invisible */
+    overflow: hidden;
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+}
+
+/* Hover Effect - Background Change */
+.bg-container:hover {
+    background-color: rgb(39, 39, 42);
+    border-color: rgb(39, 39, 42);
+}
+
+/* Hover Effect - DROPDOWN EFFECT */
+.bg-container:hover .bg-description, 
+.bg-container:hover .bg-date, 
+.bg-container:hover .bg-header h3 {
+    max-height: 200px; /* Expands to reveal */
+    opacity: 1; /* Fully visible */
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Skills Section Styling */
+/* ---------------------------------------------------------------------------- */
+
+.skills {
+    display: flex;
+    flex-direction: column; /* Stack children (h1 and .skills-container) vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* Ensures exactly 6 columns */
+    gap: min(2vw, 24px); /* Dynamically adjusts spacing */
+    justify-content: center; /* Centers grid items horizontally */
+    align-items: center; /* Centers grid items vertically */
+    margin: 20px 0px;
+}
+
+.skill-contents {
+    width: 146px;  
+    height: 146px; 
+    display: flex; /* Enables centering within each skill box */
+    flex-direction: column; /* Stacks icon and text */
+    align-items: center; /* Centers horizontally */
+    justify-content: center; /* Centers vertically */
+    text-align: center;
+    padding: 20px;
+    border-radius: 4px;
+    border: 2px solid black;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+
+.skill-contents img {
+    width: 60px; 
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.skill-contents p {
+    color: black;
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+/* Hover effect */
+.skill-contents:hover {
+    background-color: black;
+    color: black;
+}
+
+/* Change icon & text color on hover */
+.skill-contents:hover p {
+    color: white;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Projects Section Styling */
+/* ---------------------------------------------------------------------------- */
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 112px;
+}
+
+.project-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.project-container img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 12px;
+    border: black 4px solid;
+}
+
+.number-label {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.projects h2 {
+    margin-bottom: 10px;
+}
+
+.projects p {
+    font-size: 16px;
+    color: #71717A;
+    margin-bottom: 20px;
+}
+
+.projects .button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    border: 3px solid black;
+    border-radius: 4px;
+    color: white;
+    transition: background 0.3s, color 0.3s;
+}
+
+.projects .button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* ---------------------------------------------------------------------------- */
+/* Footer Styling */
+/* ---------------------------------------------------------------------------- */
+
+footer {
+    background-color: black;
+    padding: 56px 80px;
+}
+
+footer p {
+    color: white;
+    text-align: center;
 }
