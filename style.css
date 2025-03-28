@@ -234,6 +234,13 @@ section:nth-child(even) p {
 
 .about-me img{
     border-radius: 12px;
+    width: 100%;
+    margin: 60px 0px;
+    max-width: 500px; /* Prevents it from being too large */
+}
+
+.about-me .right-column{
+    margin: 60px 0px;
 }
 
 /* ---------------------------------------------------------------------------- */
@@ -312,13 +319,13 @@ section:nth-child(even) p {
 
 .skills {
     display: flex;
-    flex-direction: column; /* Stack children (h1 and .skills-container) vertically */
+    flex-direction: column; /* Stack children (h1 and .skills-row) vertically */
     align-items: center; /* Center items horizontally */
     text-align: center;
     padding: 20px 0px;
 }
 
-.skills-container {
+.skills-row {
     display: grid;
     grid-template-columns: repeat(6, 1fr); /* Ensures exactly 6 columns */
     gap: min(2vw, 24px); /* Dynamically adjusts spacing */
@@ -327,7 +334,7 @@ section:nth-child(even) p {
     margin: 20px 0px;
 }
 
-.skill-contents {
+.skill-box {
     width: 146px;  
     height: 146px; 
     display: flex; /* Enables centering within each skill box */
@@ -342,26 +349,26 @@ section:nth-child(even) p {
     transition: all 0.3s ease-in-out;
 }
 
-.skill-contents img {
+.skill-box img {
     width: 60px; 
     height: 60px;
     margin-bottom: 10px;
 }
 
-.skill-contents p {
+.skill-box p {
     color: black;
     font-size: 20px;
     margin-top: 8px;
 }
 
 /* Hover effect */
-.skill-contents:hover {
+.skill-box:hover {
     background-color: black;
     color: black;
 }
 
 /* Change icon & text color on hover */
-.skill-contents:hover p {
+.skill-box:hover p {
     color: white;
 }
 
