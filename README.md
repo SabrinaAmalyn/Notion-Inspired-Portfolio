@@ -22,7 +22,7 @@ There are still a few areas I’m actively working on to enhance the site:
 # Below are the screenshots of each section:
 
 ![image](https://github.com/user-attachments/assets/5e751685-a820-46fc-9ca8-07296b6e114d)
-![image](https://github.com/user-attachments/assets/3c86f7fc-490b-4572-ba04-89ed87971ef1)
+![image](https://github.com/user-attachments/assets/3fbe48dd-64bd-48f2-a802-8eefd76bf1df)
 ![image](https://github.com/user-attachments/assets/28d8d7eb-8143-40cc-a56d-24c9e1bc504c)
 ![image](https://github.com/user-attachments/assets/4cde95a2-7609-49ea-a3b6-f9938ee3fb6b)
 ![image](https://github.com/user-attachments/assets/7cd7d7c1-53a1-4012-9cd4-91f6b7939416)
