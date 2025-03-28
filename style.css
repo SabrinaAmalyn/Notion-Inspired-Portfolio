@@ -183,6 +183,11 @@ section:nth-child(even) p {
     align-items: center; /* Ensures vertical centering */
 }
 
+.home .left-column {
+    margin-bottom: 100px;
+    margin-top: -40px;
+}
+
 .column-text {
     display: flex;
     flex-direction: column; /* Stacks h1 elements */
@@ -191,8 +196,10 @@ section:nth-child(even) p {
 }
 
 .home img {
-    width: 100%; /* Makes image responsive */
-    max-width: 550px; /* Prevents it from being too large */
+    width: 100%;
+    max-width: 490px; /* Prevents it from being too large */
+    margin-bottom: 130px;
+    margin-left: 60px;
 }
 
 .home-buttons {
